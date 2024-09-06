@@ -1,5 +1,5 @@
-git fn main() {
-    // MOdules in Rust help  in splitting a program into logical units for better readability and organization.
+fn main() {
+    // Modules in Rust help  in splitting a program into logical units for better readability and organization.
     // A module is a collection of items: functions, structs and even other modules
 
     /*& Defining a Module in Rust */
@@ -9,6 +9,11 @@ git fn main() {
     //     // code
     // }
 
+    // public items inside module can be accessed outside the parent module.
+    // call public print function from display module
+    // the operator `::` is used to separate the module name and the item to call inside the module.
+    config:: print();
+       select();
    
 }
 
@@ -26,18 +31,13 @@ git fn main() {
  // The `pub` keyword can be used to give a an item  public visibility.
  
  mod config {
-    mod config {
-        // items in modules by default have private visibility
-        fn select() {
-            println!("called config::select");
-        }
-    
-        // use the `pub` keyword to override private visibility
-        pub fn print() {
-            println!("called config::print");
-        }
-    } 
- }
+    // items in modules by default have private visibility
+    fn select() {
+        println!("called config::select");
+       }
 
-
-
+       // use the  `pub` keyword to override private visibility
+       pub fn print() {
+        println!("called config::print");
+       }
+}
