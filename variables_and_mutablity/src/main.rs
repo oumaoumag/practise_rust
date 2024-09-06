@@ -15,11 +15,11 @@ fn main() {
 
     // shadowing applyed in changing a string type to int type
     let spaces = "    ";
-    println!("Spaces in the first instant {spaces}");
+    println!("Spaces in the first instant {spaces}.");
     let spaces = spaces.len();
     println!("spaces.len(), : {spaces}");
 
-    // // mutabilty
+    // mutabilty
     // let mut spaces = "    ";
     // println!{"first mut spaces: {spaces}"};
     // spaces = spaces.len();
