@@ -33,7 +33,10 @@ we also special characters like $, @, & etc using the special character type
 we can also store numbers as characters using single quotes.
 
     Type Inference
-
+In Rust we can create variables wtihout mentioning a data type.
+    let x = 51;
+In this case, Rust automatically identifies the data type by looking at the value of the variable `x` and
+associates it with the variable. This process is known as Type Inference.
     */ 
 
     
@@ -78,6 +81,10 @@ fn main() {
    println!("special_character = {}", special_character);
    let numeric_character: char = '5';
    println!("numeric_character = {}", numeric_character);
+
+   let x = 51;
+
+   println!("x = {}", x);
 }
 
 
