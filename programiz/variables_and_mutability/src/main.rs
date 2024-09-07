@@ -1,11 +1,13 @@
-/*  Rust Variables and Mutability */
+/*  Rust Variables */
 
 // In computer programming,  we use variables to store data.
 // we can think of variables as containers that hold information.
 
 fn main() {
     /* Variable Declaration */
-
+    
+    // we USe `let` keyword to declare variable in rust.
+    
     // variable to store integer value
     let age = 31;
     println!("Age = {}",age);
@@ -26,8 +28,8 @@ fn main() {
     println!("x = {}", x);
 
     // change the value of variable x
-    x = 2;
-    println!("x = {}", x);
+   // x = 2;
+   // println!("x = {}", x);
     /* running the above code give an error because we are trying to change the value of the `x` variable
         from  `1` to `2` */
 
