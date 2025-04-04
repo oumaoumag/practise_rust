@@ -5,6 +5,7 @@
 # Rust generated files
 **/*.rs.bk
 Cargo.lock
+**/.rustc_info.json
 
 # IDE specific files
 .idea/
