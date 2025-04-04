@@ -1,0 +1,32 @@
+
+# Rust build directory
+**/target/
+
+# Rust generated files
+**/*.rs.bk
+Cargo.lock
+
+# IDE specific files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Debug files
+**/*.pdb
+
+# OS specific files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Environment files
+.env
+.env.local
+
+# Backup files
+**/*~
