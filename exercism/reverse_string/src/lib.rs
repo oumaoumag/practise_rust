@@ -1,5 +1,5 @@
-pub fn reverse_str(Str: &str) -> String {
-    Str.chars().rev().collect()
+pub fn reverse_str(input: &str) -> String {
+    input.chars().rev().collect()
 }
 
 #[cfg(test)]
