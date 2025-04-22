@@ -21,5 +21,26 @@ impl Matrix {
         }
     }
 
+    pub fn set(&mut self, row: usize, col: usize, value: f64) -> Result<(), String> {
+        if col < self.cols && row < self.rows {
+            let index = row * self.cols + col;
+            self.data[index] = value;
+            Ok(())
+        } else {
+            Err("Error out bounds".to_string())
+        }
+    }
+
 }
  
+
+pub fn print_matrix(matrix: &Matrix) {
+    for r in 0..matrix.rows {
+        for c in 0..matrix.cols {
+            if let Some(value) = matrix.get(r, c) {
+                print!("{} ", value);
+            }
+        }
+        println!();
+    }
+}
