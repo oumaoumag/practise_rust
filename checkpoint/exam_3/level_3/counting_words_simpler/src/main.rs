@@ -1,4 +1,4 @@
-use counting_words_simpler::*;
+use counting_words_simpler::;
 use std::collections::HashMap;
 
 fn main() {
