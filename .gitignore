@@ -31,3 +31,6 @@ Thumbs.db
 
 # Backup files
 **/*~
+
+# internal scripts
+push-all.sh
