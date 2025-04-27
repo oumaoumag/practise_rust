@@ -11,10 +11,9 @@ pub fn count_factorial_steps(factorial: u64) -> u64 {
         product *= count;
     }
 
-    if product == factorial {
-        count
+    if factorial == product {
+         count
     } else {
         0
     }
-
 }
